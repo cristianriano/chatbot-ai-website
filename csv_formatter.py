@@ -30,4 +30,4 @@ df = pd.DataFrame(texts, columns=['fname', 'text'])
 # Set the text column to be the raw text with the newlines removed
 df['text'] = df.fname + ". " + remove_newlines(df.text)
 df.to_csv('processed/scraped.csv')
-df.head()
+print(df.head())
